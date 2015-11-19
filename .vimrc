@@ -43,7 +43,6 @@ Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " " Git plugin not hosted on GitHub
-<<<<<<< HEAD
 " ugin 'git://git.wincent.com/command-t.git'
 " Plugin 'git://git.wincent.com/command-t.git'
 " " git repos on your local machine (i.e. when working on your own plugin)
