@@ -34,11 +34,8 @@ Plugin 'ervandew/supertab'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
-<<<<<<< HEAD
 Plugin 'kien/ctrlp.vim'
 
-=======
->>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
@@ -48,9 +45,7 @@ Plugin 'tpope/vim-fugitive'
 " " Git plugin not hosted on GitHub
 <<<<<<< HEAD
 " ugin 'git://git.wincent.com/command-t.git'
-=======
-Plugin 'git://git.wincent.com/command-t.git'
->>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
+" Plugin 'git://git.wincent.com/command-t.git'
 " " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -130,7 +125,6 @@ let g:syntastic_check_on_wq = 0
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-<<<<<<< HEAD
 " klen python-mode
 " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_rope_goto_definition_bind = "<C-]>"
@@ -147,16 +141,16 @@ set splitbelow
 set splitright
 
 " Setup some default ignores
-" let g:ctrlp_custom_ignore = {
-"   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-"     \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-"     \}
+ let g:ctrlp_custom_ignore = {
+   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+     \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+     \}
 "
 "     " Use the nearest .git directory as the cwd
 "     " This makes a lot of sense if you are working on a project that is in
 "     version
 "     " control. It also supports works with .svn, .hg, .bzr.
-"     let g:ctrlp_working_path_mode = 'r'
+     let g:ctrlp_working_path_mode = 'r'
 "
 "" Use a leader instead of the actual named binding
 nmap <leader>p :CtrlP<cr>
@@ -168,28 +162,24 @@ nmap <leader>bs :CtrlPMRU<cr>
 "     "
 " }
 " Use the right side of the screen
-" let g:buffergator_viewport_split_policy = 'R'
+let g:buffergator_viewport_split_policy = 'R'
 "
 " " I want my own keymappings...
-" let g:buffergator_suppress_keymaps = 1
+let g:buffergator_suppress_keymaps = 1
 "
 "" Looper buffers
-"let g:buffergator_mru_cycle_loop = 1
+let g:buffergator_mru_cycle_loop = 1
 "
 "" Go to the previous buffer open
 nmap <leader>jj :BuffergatorMruCyclePrev<cr>
 
 " Go to the next buffer open
-" nmap <leader>kk :BuffergatorMruCycleNext<cr>
+nmap <leader>kk :BuffergatorMruCycleNext<cr>
 "
 " " View the entire list of buffers open
-" nmap <leader>bl :BuffergatorOpen<cr>
+nmap <leader>bl :BuffergatorOpen<cr>
 "
 "" Shared bindings from Solution #1 from earlier
 nmap <leader>T :enew<cr>
 nmap <leader>bq :bp <BAR> bd #<cr>"
 " "
-" "
-=======
-" set omnifunc=syntaxcomplete#Complete
->>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
