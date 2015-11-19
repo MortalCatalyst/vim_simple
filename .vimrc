@@ -34,8 +34,11 @@ Plugin 'ervandew/supertab'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
+<<<<<<< HEAD
 Plugin 'kien/ctrlp.vim'
 
+=======
+>>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
@@ -43,7 +46,11 @@ Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " " Git plugin not hosted on GitHub
+<<<<<<< HEAD
 " ugin 'git://git.wincent.com/command-t.git'
+=======
+Plugin 'git://git.wincent.com/command-t.git'
+>>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
 " " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -123,6 +130,7 @@ let g:syntastic_check_on_wq = 0
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+<<<<<<< HEAD
 " klen python-mode
 " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_rope_goto_definition_bind = "<C-]>"
@@ -182,3 +190,6 @@ nmap <leader>T :enew<cr>
 nmap <leader>bq :bp <BAR> bd #<cr>"
 " "
 " "
+=======
+" set omnifunc=syntaxcomplete#Complete
+>>>>>>> f08c8cf72cd8f01279dd9b7935db7fcc962267b5
