@@ -30,7 +30,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
-" Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
@@ -84,6 +84,8 @@ syntax on
 set number
 set shiftwidth=4
 set softtabstop=4
+set tabstop=4
+set shiftwidth=4
 set smartindent
 set expandtab
 set showcmd
