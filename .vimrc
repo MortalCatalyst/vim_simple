@@ -21,7 +21,8 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'klen/python-mode'
-Plugin 'justinmk/vim-sneak'
+" Plugin 'justinmk/vim-sneak'
+Plugin 'easymotion/vim-easymotion' 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'JulesWang/css.vim'
@@ -30,7 +31,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
-Plugin 'ervandew/supertab'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
@@ -97,6 +97,30 @@ set wildmenu
 set backspace=indent,eol,start
 
 colorscheme gruvbox 
+
+" set cut and paste
+"
+" copy and paste
+set clipboard+=unnamedplus  " use the clipboards of vim and win
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+" easymotion
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+
+map  / <Plug>(easymotion-sn)
+map / <Plug>(easymotion-tn)
+
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+let g:EasyMotion_smartcase = 1
 
 " autocmd VimEnter * NERDTree
 "replace with :Explore
@@ -211,4 +235,4 @@ nmap <leader>T :enew<cr>
 nmap <leader>bq :bp <BAR> bd #<cr>"
 " "
 " indent to next line with spaces
-" imap <C-c> <CR><Esc>O
+ " imap <C-c> <CR><Esc>O
