@@ -46,6 +46,8 @@ Plugin 'svermeulen/vim-easyclip'
 Plugin 'tpope/vim-repeat'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'morhetz/gruvbox'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'mattn/emmet-vim'
 " Plugin 'mustache/vim-mustache-handlebars'
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
