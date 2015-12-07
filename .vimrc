@@ -45,9 +45,13 @@ Plugin 'airblade/vim-rooter'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'tpope/vim-repeat'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'morhetz/gruvbox'
+" Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'mattn/emmet-vim'
+Plugin 'noah/vim256-color'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'hail2u/vim-css3-syntax'
+
 " Plugin 'mustache/vim-mustache-handlebars'
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
@@ -98,7 +102,7 @@ set pumheight=15
 set wildmenu
 set backspace=indent,eol,start
 
-colorscheme gruvbox 
+colorscheme solarized-dark 
 
 " set cut and paste
 "
