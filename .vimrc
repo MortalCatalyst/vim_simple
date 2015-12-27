@@ -30,6 +30,7 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
@@ -107,9 +108,33 @@ set completeopt=menu,menuone,longest
 set pumheight=15
 set wildmenu
 set backspace=indent,eol,start
+set guioptions-=T 
+set guifont=Monospace\ 10.5
 
 colorscheme cobalt 
 
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window (for an alternative on Windows, see simalt below).
+  set lines=56 columns=120
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+  if &diff
+  " double the width up to a reasonable maximum
+  let &columns = ((&columns*2 > 240)? 240: &columns*2)
+    endif 
+endif
+" autocmd VimEnter * NERDTree
+"replace with :Explore
+let mapleader = ","
+"map <leader>k :Explore<cr>
+map <leader>m :NERDTreeToggle<CR>
 " mapping for better emmet completion
 imap <expr> <C-Z> emmet#expandAbbrIntelligent("\<C-Z>")
 " set cut and paste
@@ -136,10 +161,6 @@ map <Leader>h <Plug>(easymotion-linebackward)
 let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 let g:EasyMotion_smartcase = 1
 
-" autocmd VimEnter * NERDTree
-"replace with :Explore
-let mapleader = ","
-map <leader>k :Explore<cr>
 let g:syntastic_javascript_checkers = ['jscs']
 
 autocmd VimEnter * wincmd p
