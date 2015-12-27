@@ -39,7 +39,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Raimondi/delimitMate'
-" Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'airblade/vim-rooter'
 Plugin 'svermeulen/vim-easyclip'
@@ -110,6 +110,8 @@ set backspace=indent,eol,start
 
 colorscheme cobalt 
 
+" mapping for better emmet completion
+imap <expr> <C-Z> emmet#expandAbbrIntelligent("\<C-Z>")
 " set cut and paste
 "
 " copy and paste
