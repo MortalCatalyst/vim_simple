@@ -35,11 +35,11 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/ctrlp.vim'
-Plugin 'lukerandall/haskellmode-vim'
+" Plugin 'lukerandall/haskellmode-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'Raimondi/delimitMate'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'airblade/vim-rooter'
 Plugin 'svermeulen/vim-easyclip'
@@ -51,6 +51,12 @@ Plugin 'mattn/emmet-vim'
 Plugin 'noah/vim256-color'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'Valloric/YouCompleteMe'
+"Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'Glench/Vim-Jinja2-Syntax'
+"Plugin 'tomtom/tlib_vim'
+"Plugin 'garbas/vim-snipmate'
+"Plugin 'honza/vim-snippets'
 
 " Plugin 'mustache/vim-mustache-handlebars'
 " " The following are examples of different formats supported.
@@ -102,7 +108,7 @@ set pumheight=15
 set wildmenu
 set backspace=indent,eol,start
 
-colorscheme solarized-dark 
+colorscheme cobalt 
 
 " set cut and paste
 "
